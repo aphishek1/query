@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header{
+            color:black;
+            text-align: center;
+            font-size: 45px;
+            font-family: monospace;
+            border: 1px black dotted double;
+        }
+
+        .pic{
+            width: 200px;
+            height: 120px;
+            padding: 2px;
+        }
+
+        article{
+            border: 2px black dashed;
+            padding-inline: 20px;
+            font-size: 15px;
+            font-family: sans-serif;
+
+        }
+
+        article p{
+            text-indent: 90px;
+        }
+
+        #no{
+            color: goldenrod;
+            display: inline;
+        }
+
+    </style>
+
+<script src="new/jquery-3.7.1.js"></script
+
+</head>
+<body>
+
+    <header>
+        Hello User
+        <span class="material-symbols-outlined">Search</span>
+    </header>
+
+    <h1 id="no">Well As I'm Saying..</h1>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque odit minus nesciunt magni laudantium iste totam reiciendis laboriosam,<img class="pic" src="images/30.jpg" align="right"> quae quo eveniet rerum fugit? Sequi recusandae veniam delectus officia praesentium! Magnam? 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores temporibus incidunt voluptatem quidem impedit perferendis laudantium, harum excepturi nemo odio dicta sed sequi. Optio ut voluptates odio libero laudantium?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint qui nihil voluptate, veritatis magni, molestias, quas cum laudantium tenetur impedit est voluptatum! Magni, cum sed amet sunt vero natus dicta.t? Sequi recusandae veniam delectus officia praesentium! Magnam? 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores temporibus incidunt voluptatem quidem impedit perferendis laudantium, harum excepturi nemo odio dicta sed sequi. Optio ut voluptates odio libero laudantium?
+        </p>
+    </article>
+
+
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="intro.html">1</a></li>
+            <li class="page-item " aria-current="page">
+                <a class="page-link" href="hub.html">2</a>
+            </li>
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+       
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+
+  $(document).ready(function()
+ {
+    /*
+            $(".pic").click(function()
+            {
+                $(this).hide(1000,show)
+            })
+
+            $("#no").mouseover(function()
+             {
+                $("#no").hide("slow")
+             })
+
+            */
+
+
+            $("p").click(function()
+
+               {
+                $(this).hide("fast")
+               }
+            )    
+            
+     //$("p").hide(2000,show)
+
+})
+    function show()
+    {
+
+     //alert("zoom out/and Showing Page")
+     $("p").show(2000)
+    }
+
+
+    function unhide()
+   {
+     setTimeout("show()",1000)
+    }
+
+
+
+
+
+ </script>
+
+    
+
+
+    
+</body>
+</html>

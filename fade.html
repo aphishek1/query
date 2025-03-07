@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+
+    <style>
+
+      #main{
+        text-align: center;
+        font-size: 70px;
+        box-shadow: 10px 10px 10px gray;
+        margin: auto;
+      }
+    
+      .text{
+        border: 2px black dashed;
+        padding: 40px;
+      }
+
+      h2{
+        text-align:end;
+        cursor: pointer;
+      }
+
+      #p1{
+        width: 60%;
+        display: block;
+        margin: auto;
+      }
+
+    
+    </style>
+
+
+<script src="new/jquery-3.7.1.js"></script>
+
+
+<body>
+
+
+    <div id="main">
+        FadeIn/out
+    </div>
+    <h1 id="top" style="cursor:pointer;text-align: center;">Topic</h1>
+    <div style="height: 100px;"></div>
+
+    
+       
+
+<script>
+
+  $(document).ready(function()
+ {
+   
+
+
+            $("#top").click(function()
+
+               {
+                $("#main").fadeToggle(1900)
+            })    
+            
+            $("#p1").fadeTo(0,0.50)
+
+            $("#p1").click(function()
+            {
+               $("#p1").fadeTo(1000,0.99)
+            })
+
+            $("#p1").mouseout(function()
+            {
+                $(this).fadeTo(1000,0.50)
+            })
+
+            $(".text").fadeOut(1000)
+
+            $("h2").click(function()
+            {
+                $(".text").fadeIn(1000)
+            } )
+             
+            $("h2").mouseout(function()
+            {
+                $(".text").fadeOut(1000)
+
+            })
+
+    })
+
+
+ </script>
+
+ <h2>About</h2>
+ <img src="images/1.gif" id="p1">
+ <p class="text">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, aut qui. Iste necessitatibus, blanditiis, omnis eum adipisci eaque consequuntur amet consectetur provident perspiciatis dolor sit debitis recusandae aperiam rem commodi.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veritatis. Atque, sint! Temporibus porro dignissimos, ex, earum tempore sint perferendis id excepturi debitis doloremque eius error maxime possimus. Labore, minima.
+    Natus quidem quia vero, voluptate libero iusto error excepturi asperiores, est amet nam. Impedit, vel illo dicta ducimus hic aspernatur at perspiciatis excepturi, voluptates reprehenderit quis modi omnis nobis! Nisi.
+    Obcaecati aliquid excepturi, iure quisquam, facere asperiores dolorum animi est vel accusamus similique beatae dolores quae voluptate, ad repellendus reiciendis cumque adipisci soluta perferendis recusandae sapiente numquam vero dicta. Maiores!
+    Fuga nesciunt labore in officia amet aperiam, architecto distinctio iusto aut quis, alias blanditiis consequuntur. Error voluptates veritatis velit ratione facere assumenda adipisci sed iusto ullam, minus dolor mollitia aliquid.
+    Eaque debitis at et atque odit consectetur quod unde, non ea molestias maiores aut, possimus, ipsam amet veritatis doloribus illo inventore quae ex optio. Fuga quas dicta accusamus a quasi!
+    Sed tenetur ullam soluta suscipit quos velit ab exercitationem voluptas nobis eveniet, labore corporis possimus esse saepe, aut tempora fugit, magnam quasi laborum est accusantium. Earum impedit soluta reiciendis tempore?
+    Voluptatibus vitae ut assumenda, nostrum sint harum illum expedita adipisci ratione amet, laborum recusandae vel. Voluptas, eaque accusantium? Quaerat ad dolores praesentium cumque delectus animi aliquid excepturi! Enim, aspernatur odio.
+    Enim ullam error quia. Nulla ipsa perferendis animi sequi porro doloremque tenetur ipsam possimus dolor magnam, quibusdam optio. Porro placeat temporibus illo quia modi sapiente impedit nesciunt voluptates velit. Natus?
+ </p>
+
+    
+
+
+    
+</body>
+</html>

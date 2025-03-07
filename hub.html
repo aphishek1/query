@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>   
+
+
+    
+
+<style>
+
+    span{
+            
+        padding: 3px;
+        margin: auto;
+        text-align: center;
+        float:left;
+    }
+
+</style>
+
+<script src="new/jquery-3.7.1.js"></script
+
+
+<body>
+
+    <button id="hider">Hide</button>
+    <button id="shower">Show</button>
+    <div>
+        <span> Once </span> <span> Upon </span> <span> a </span>
+        <span> time </span> <span> there </span> <span> One </span>
+        <span>
+            programmer
+        </span>
+    </div>
+      
+ <script>
+
+  $("#hider").on("click",function()
+  {
+   
+            $("span:last-child").hide("fast",function()
+             {
+                $(this).prev().hide("fast",arguments.callee);
+             
+            });
+        });
+
+        $("#shower").on("click",function(){
+            $("span").show( 2000 );
+        });
+
+
+
+    </script>
+
+    
+
+    
+
+
+    
+</body>
+</html>
